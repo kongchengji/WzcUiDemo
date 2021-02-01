@@ -1,6 +1,6 @@
 {
   "name": "kongchengji",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "自己搭组件进行测试，信我就可以下载",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/kongchengji/WzcUiDemo/issues"
   },
-  "homepage": "https://github.com/kongchengji/WzcUiDemo#readme"
+  "homepage": "https://github.com/kongchengji/WzcUiDemo#readme",
+  "dependencies": {
+    "element-resize-detector": "^1.2.1"
+  }
 }
