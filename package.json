@@ -1,0 +1,22 @@
+{
+  "name": "kongchengji",
+  "version": "1.0.0",
+  "description": "自己搭组件进行测试，信我就可以下载",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kongchengji/WzcUiDemo.git"
+  },
+  "keywords": [
+    "测试"
+  ],
+  "author": "kongchengji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kongchengji/WzcUiDemo/issues"
+  },
+  "homepage": "https://github.com/kongchengji/WzcUiDemo#readme"
+}
