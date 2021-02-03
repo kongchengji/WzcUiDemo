@@ -1,6 +1,6 @@
 {
   "name": "kongchengji",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "自己搭组件进行测试，信我就可以下载",
   "main": "index.js",
   "scripts": {

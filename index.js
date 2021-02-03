@@ -15,7 +15,8 @@ import wzc_color_picker from "./ColorPicker/wzc-color-picker";
 import wzc_timeline from "./TimeLine/wzc-timeline";
 import wzc_timeline_option from "./TimeLine/wzc-timeline-option";
 import wzc_dividingline from "./DividingLine/wzc-dividingline";
-import wzc_picview from "./PicView/wzc-picview"
+import wzc_picview from "./PicView/wzc-picview";
+import wzc_input from "./input/wzc-input"
 
 const components = [
     wzc_select,
@@ -30,6 +31,7 @@ const components = [
     wzc_timeline_option,
     wzc_dividingline,
     wzc_picview,
+    wzc_input,
 ]
 
 const install = function(Vue) {
@@ -53,4 +55,5 @@ export default {
     wzc_timeline_option,
     wzc_dividingline,
     wzc_picview,
+    wzc_input,
 }
