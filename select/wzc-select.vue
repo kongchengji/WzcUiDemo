@@ -99,6 +99,9 @@ export default {
     .selectinfos {
         width: 87.5%;
         cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .no_select {
         color: #D3DCE6;

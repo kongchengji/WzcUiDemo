@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "wzc_select",
+  name: "wzc_option",
   components: {},
   props: {
     width: {
@@ -66,6 +66,9 @@ export default {
   line-height: var(--option-height);
   cursor: pointer;
   margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 </style>

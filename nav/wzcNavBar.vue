@@ -1,6 +1,6 @@
 <template>
   <div id="wzcNavBar">
-      <div class="mainNav" :style="{ 'width': width + 'px', 'height': height + 'px' }">
+      <div class="mainNav" :style="styleVar">
         <div class="leftHead" @click="checkItem = -1">
           <a :href="navName.nameHref">{{ navName.name }}</a> 
         </div>
@@ -20,7 +20,6 @@
 </template>
 
 <script>
-import $ from 'jquery'
 export default {
   name: 'wzcNavBar',
   components: {},
@@ -28,11 +27,11 @@ export default {
       navName: {},
       width: {
         type: Number,
-        default: '1100'
+        default: 1100
       },
       height: {
         type: Number,
-        default: '70'
+        default: 70
       },
   },
   data() {
@@ -49,12 +48,17 @@ export default {
       console.log(str)
     }
   },
-  computed: {},
+  computed: {
+    styleVar() {
+            return {
+                '--navbar-height': this.height + 'px',
+                '--navbar-width': this.width + 'px',
+            }
+        }
+  },
   methods: {
     init() {
       var self = this;
-      // 设置字体上下间距
-      $('.mainNav').css('line-height', this.height + 'px');
       // url判断
       this.urlCheck();
     },
@@ -78,18 +82,19 @@ export default {
         return url.substring(0, url.indexOf('/'))
     }
   },
-  created() {},
   
 };
 </script>
 <style scoped>
-  #wzcNavBar { }
   .mainNav {    
     margin: 0 auto;
     height: 80px;    
     box-sizing: border-box;
     border-bottom: 1px solid #412D50;
     display: flex;
+    width: var(--navbar-width);
+    height: var(--navbar-height);
+    line-height: var(--navbar-height);
   }
   .mainNav a {
     text-decoration: none;
